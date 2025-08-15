@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout - Zytoune Bladi</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/utilities.css">
+  <script defer src="/assets/js/i18n.js"></script>
+  <script defer src="/assets/js/app.js"></script>
+  <script defer src="/assets/js/cart.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div data-include="/partials/header.html"></div>
+<main id="main" class="checkout-page">
+  <h1>Checkout</h1>
+  <form id="checkout-form">
+    <section class="step" data-step="1">
+      <h2>Address</h2>
+      <label>Name <input type="text" required></label>
+      <label>Address <input type="text" required></label>
+      <button type="button" class="next">Next</button>
+    </section>
+    <section class="step" data-step="2" hidden>
+      <h2>Shipping</h2>
+      <label><input type="radio" name="ship" checked> Standard</label>
+      <label><input type="radio" name="ship"> Express</label>
+      <button type="button" class="prev">Back</button>
+      <button type="button" class="next">Next</button>
+    </section>
+    <section class="step" data-step="3" hidden>
+      <h2>Payment</h2>
+      <label><input type="radio" name="pay" checked> Credit card</label>
+      <label><input type="radio" name="pay"> PayPal</label>
+      <button type="button" class="prev">Back</button>
+      <button type="submit" class="btn btn--primary">Place order</button>
+    </section>
+  </form>
+  <aside class="order-summary">
+    <h2>Summary</h2>
+    <div id="summary-items"></div>
+    <p>Total: <span id="summary-total">$0.00</span></p>
+  </aside>
+</main>
+<div data-include="/partials/footer.html"></div>
+<div data-include="/partials/mobile-nav.html"></div>
+<div data-include="/partials/cart-drawer.html"></div>
+</body>
+</html>

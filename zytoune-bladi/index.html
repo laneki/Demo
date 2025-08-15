@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zytoune Bladi - Moroccan Olives & Local Products</title>
+  <meta name="description" content="Discover traditional Moroccan olives and local products from Zytoune Bladi."/>
+  <link rel="canonical" href="https://example.com/"/>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/utilities.css">
+  <link rel="stylesheet" href="/assets/css/print.css" media="print">
+  <link rel="preload" href="/assets/fonts/inter/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/inter/inter-600.woff2" as="font" type="font/woff2" crossorigin>
+  <script defer src="/assets/js/i18n.js"></script>
+  <script defer src="/assets/js/app.js"></script>
+  <script defer src="/assets/js/cart.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div data-include="/partials/header.html"></div>
+<main id="main">
+  <section class="hero">
+    <img src="https://placehold.co/1600x700?text=Zytoune+Bladi" alt="Fresh Moroccan olives" srcset="https://placehold.co/800x350?text=Zytoune+Bladi 800w, https://placehold.co/1600x700?text=Zytoune+Bladi 1600w" sizes="(max-width: 800px) 100vw, 1600px">
+    <div class="hero__content">
+      <h1 data-i18n="home.hero.title">Taste the Tradition</h1>
+      <p data-i18n="home.hero.subtitle">Authentic olives from Morocco to your table.</p>
+      <a href="/shop/index.html" class="btn btn--primary" data-i18n="buttons.shopNow">Shop Now</a>
+    </div>
+  </section>
+  <section class="categories" aria-labelledby="cat-title">
+    <h2 id="cat-title" data-i18n="home.categories">Featured Categories</h2>
+    <div class="categories__grid">
+      <a href="/shop/category.html" class="category-card"><img src="https://placehold.co/300x200?text=Green" alt="Green olives"><span>Green Olives</span></a>
+      <a href="/shop/category.html" class="category-card"><img src="https://placehold.co/300x200?text=Black" alt="Black olives"><span>Black Olives</span></a>
+      <a href="/shop/category.html" class="category-card"><img src="https://placehold.co/300x200?text=Oil" alt="Olive oil"><span>Olive Oil</span></a>
+      <a href="/shop/category.html" class="category-card"><img src="https://placehold.co/300x200?text=Tapenade" alt="Tapenade spreads"><span>Tapenades</span></a>
+      <a href="/shop/category.html" class="category-card"><img src="https://placehold.co/300x200?text=Spices" alt="Spices"><span>Spices</span></a>
+      <a href="/shop/category.html" class="category-card"><img src="https://placehold.co/300x200?text=Gifts" alt="Gift boxes"><span>Gift Boxes</span></a>
+    </div>
+  </section>
+  <section class="products" aria-labelledby="prod-title">
+    <h2 id="prod-title" data-i18n="home.featured">Featured Products</h2>
+    <div id="featured-products" class="product-grid"></div>
+  </section>
+  <section class="newsletter" aria-labelledby="news-title">
+    <h2 id="news-title" data-i18n="home.newsletter">Join our newsletter</h2>
+    <form id="newsletter-form">
+      <label for="newsletter-email" class="visually-hidden">Email</label>
+      <input type="email" id="newsletter-email" placeholder="you@example.com" required>
+      <button class="btn btn--primary" data-i18n="buttons.subscribe">Subscribe</button>
+    </form>
+  </section>
+</main>
+<div data-include="/partials/footer.html"></div>
+<div data-include="/partials/mobile-nav.html"></div>
+<div data-include="/partials/cart-drawer.html"></div>
+<div data-include="/partials/product-card.html"></div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Zytoune Bladi",
+  "url": "https://example.com",
+  "logo": "https://placehold.co/200x80?text=Logo"
+}
+</script>
+</body>
+</html>

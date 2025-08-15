@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Cart - Zytoune Bladi</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/utilities.css">
+  <script defer src="/assets/js/i18n.js"></script>
+  <script defer src="/assets/js/app.js"></script>
+  <script defer src="/assets/js/cart.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div data-include="/partials/header.html"></div>
+<main id="main" class="cart-page">
+  <h1>Your Cart</h1>
+  <div id="cart-items"></div>
+  <div class="cart-summary">
+    <label for="promo">Promo code</label>
+    <input id="promo" type="text">
+    <button id="apply-promo" class="btn">Apply</button>
+    <div class="totals">
+      <p>Subtotal: <span id="subtotal">$0.00</span></p>
+      <p>VAT: <span id="vat">$0.00</span></p>
+      <p><strong>Total: <span id="total">$0.00</span></strong></p>
+    </div>
+    <a href="/cart/checkout.html" class="btn btn--primary">Checkout</a>
+  </div>
+</main>
+<div data-include="/partials/footer.html"></div>
+<div data-include="/partials/mobile-nav.html"></div>
+<div data-include="/partials/cart-drawer.html"></div>
+</body>
+</html>

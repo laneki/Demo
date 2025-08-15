@@ -1,0 +1,6 @@
+[
+  {"id":"1","name":"Olives","slug":"olives","parentId":null,"image":"https://placehold.co/300x200?text=Olives"},
+  {"id":"2","name":"Oil","slug":"oil","parentId":null,"image":"https://placehold.co/300x200?text=Oil"},
+  {"id":"3","name":"Tapenades","slug":"tapenades","parentId":null,"image":"https://placehold.co/300x200?text=Tapenade"},
+  {"id":"4","name":"Spices","slug":"spices","parentId":null,"image":"https://placehold.co/300x200?text=Spices"}
+]

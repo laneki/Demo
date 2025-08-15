@@ -1,0 +1,4 @@
+html[dir="rtl"] body { direction: rtl; }
+html[dir="rtl"] .nav__list { flex-direction: row-reverse; }
+html[dir="rtl"] .header__inner { flex-direction: row-reverse; }
+html[dir="rtl"] .actions { margin-right:auto; margin-left:0; }

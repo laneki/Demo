@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop - Zytoune Bladi</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/utilities.css">
+  <script defer src="/assets/js/i18n.js"></script>
+  <script defer src="/assets/js/app.js"></script>
+  <script defer src="/assets/js/filters.js"></script>
+  <script defer src="/assets/js/cart.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div data-include="/partials/header.html"></div>
+<main id="main" class="shop-page">
+  <aside class="filters" aria-label="Filters">
+    <form id="filter-form">
+      <h2>Filters</h2>
+      <div>
+        <label for="category-filter">Category</label>
+        <select id="category-filter"></select>
+      </div>
+      <div>
+        <label for="price-range">Price</label>
+        <input type="range" id="price-range" min="0" max="100">
+      </div>
+      <div>
+        <label><input type="checkbox" id="in-stock"> In stock</label>
+      </div>
+    </form>
+  </aside>
+  <section class="products" aria-labelledby="shop-title">
+    <header class="products__header">
+      <h1 id="shop-title">Shop</h1>
+      <div class="sort">
+        <label for="sort-select">Sort</label>
+        <select id="sort-select">
+          <option value="pop">Popularity</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+        </select>
+        <button type="button" id="grid-toggle" aria-label="Toggle grid">&#9638;</button>
+      </div>
+    </header>
+    <div id="product-grid" class="product-grid"></div>
+    <nav class="pagination" aria-label="Pagination">
+      <button id="prev-page" disabled>&laquo;</button>
+      <span id="page-info"></span>
+      <button id="next-page">&raquo;</button>
+    </nav>
+  </section>
+</main>
+<div data-include="/partials/footer.html"></div>
+<div data-include="/partials/mobile-nav.html"></div>
+<div data-include="/partials/cart-drawer.html"></div>
+<div data-include="/partials/product-card.html"></div>
+</body>
+</html>

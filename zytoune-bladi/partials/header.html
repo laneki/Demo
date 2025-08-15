@@ -1,0 +1,34 @@
+<header class="header" role="banner">
+  <div class="header__inner">
+    <a href="/index.html" class="logo" aria-label="Zytoune Bladi">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2C8 2 4 6 4 10c0 6 8 12 8 12s8-6 8-12c0-4-4-8-8-8z" fill="#0B7D5E"/></svg>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav__list">
+        <li><a href="/index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="/shop/index.html" data-i18n="nav.shop">Shop</a></li>
+        <li><a href="/shop/category.html" data-i18n="nav.categories">Categories</a></li>
+        <li><a href="/content/about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="/content/blog.html" data-i18n="nav.blog">Blog</a></li>
+        <li><a href="/content/contact.html" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </nav>
+    <form class="search" role="search">
+      <label for="search-input" class="visually-hidden">Search</label>
+      <input id="search-input" type="search" placeholder="Search..." autocomplete="off">
+    </form>
+    <div class="actions">
+      <div class="lang-switch" id="lang-switch">
+        <button data-lang="en">EN</button>
+        <button data-lang="fr">FR</button>
+        <button data-lang="ar">AR</button>
+      </div>
+      <a href="/account/login.html" class="action" aria-label="Account">👤</a>
+      <a href="/account/wishlist.html" class="action" aria-label="Wishlist">♡</a>
+      <button id="cart-open" class="action" aria-label="Cart" aria-controls="cart-drawer" aria-expanded="false">
+        🛒<span id="cart-count" class="badge">0</span>
+      </button>
+      <button id="mobile-menu-open" class="hamburger" aria-label="Menu" aria-controls="mobile-nav" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
