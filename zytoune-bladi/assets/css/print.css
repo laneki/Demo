@@ -1,0 +1,5 @@
+@media print {
+  header, footer, .actions, .mobile-nav, .cart-drawer { display: none !important; }
+  body { background: #fff; }
+  .order-summary, .cart-page, .checkout-page { box-shadow: none; }
+}

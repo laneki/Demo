@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product - Zytoune Bladi</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/utilities.css">
+  <script defer src="/assets/js/i18n.js"></script>
+  <script defer src="/assets/js/app.js"></script>
+  <script defer src="/assets/js/product.js"></script>
+  <script defer src="/assets/js/cart.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div data-include="/partials/header.html"></div>
+<div data-include="/partials/breadcrumb.html" data-breadcrumb='[{"name":"Home","url":"/index.html"},{"name":"Product"}]'></div>
+<main id="main" class="product-page">
+  <section class="product-view">
+    <div class="gallery">
+      <img id="main-image" src="https://placehold.co/600x600?text=Product" alt="Product image">
+      <div class="thumbnails">
+        <button class="thumb" data-src="https://placehold.co/600x600?text=Product1"><img src="https://placehold.co/100x100?text=1" alt="Thumbnail 1"></button>
+        <button class="thumb" data-src="https://placehold.co/600x600?text=Product2"><img src="https://placehold.co/100x100?text=2" alt="Thumbnail 2"></button>
+      </div>
+    </div>
+    <div class="details">
+      <h1 id="product-title">Product Name</h1>
+      <p class="rating" aria-label="4 out of 5 stars">
+        <span class="stars">★★★★☆</span>
+        <span class="reviews">(10)</span>
+      </p>
+      <p class="price"><span class="current">$10.00</span> <span class="old">$15.00</span></p>
+      <div class="options">
+        <label>Size
+          <select id="option-size">
+            <option>250g</option>
+            <option>500g</option>
+          </select>
+        </label>
+      </div>
+      <div class="add-to-cart">
+        <input type="number" id="quantity" value="1" min="1">
+        <button id="add-to-cart" class="btn btn--primary">Add to cart</button>
+      </div>
+      <button id="add-to-wishlist" class="btn">♡ Wishlist</button>
+      <div class="share">
+        <span>Share:</span>
+        <a href="#" aria-label="Share on Facebook">Fb</a>
+        <a href="#" aria-label="Share on Twitter">Tw</a>
+      </div>
+    </div>
+  </section>
+  <section class="tabs">
+    <nav>
+      <button class="tab active" data-tab="desc">Description</button>
+      <button class="tab" data-tab="ing">Ingredients</button>
+      <button class="tab" data-tab="rev">Reviews</button>
+      <button class="tab" data-tab="ship">Shipping</button>
+    </nav>
+    <div id="tab-desc" class="tab-content active"><p>Lorem ipsum dolor sit amet.</p></div>
+    <div id="tab-ing" class="tab-content"><p>Olives, Olive oil, Spices.</p></div>
+    <div id="tab-rev" class="tab-content"><p>No reviews yet.</p></div>
+    <div id="tab-ship" class="tab-content"><p>Ships within 3 days.</p></div>
+  </section>
+  <section class="related" aria-labelledby="related-title">
+    <h2 id="related-title">Related Products</h2>
+    <div id="related-products" class="product-grid"></div>
+  </section>
+</main>
+<div data-include="/partials/footer.html"></div>
+<div data-include="/partials/mobile-nav.html"></div>
+<div data-include="/partials/cart-drawer.html"></div>
+<div data-include="/partials/product-card.html"></div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Sample Product",
+  "image": "https://placehold.co/600x600?text=Product",
+  "offers": {"@type": "Offer","priceCurrency": "USD","price": "10.00"},
+  "aggregateRating": {"@type": "AggregateRating","ratingValue": "4","reviewCount": "10"}
+}
+</script>
+</body>
+</html>

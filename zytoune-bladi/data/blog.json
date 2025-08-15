@@ -1,0 +1,18 @@
+[
+  {
+    "id":"1",
+    "title":"Health Benefits of Olives",
+    "slug":"health-benefits-of-olives",
+    "cover":"https://placehold.co/800x400?text=Olives",
+    "excerpt":"Why olives are good for you.",
+    "body":"<p>Olives are packed with nutrients...</p>"
+  },
+  {
+    "id":"2",
+    "title":"Traditional Moroccan Recipes",
+    "slug":"traditional-moroccan-recipes",
+    "cover":"https://placehold.co/800x400?text=Recipes",
+    "excerpt":"Cook with authentic flavors.",
+    "body":"<p>Explore these classic recipes...</p>"
+  }
+]

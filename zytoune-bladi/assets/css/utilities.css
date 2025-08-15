@@ -1,0 +1,9 @@
+.container { width: min(100% - 32px, 1200px); margin-inline: auto; }
+.flex { display: flex; }
+.grid { display: grid; }
+.text-center { text-align: center; }
+.hide { display: none !important; }
+.mt-8 { margin-top:8px; }
+.mt-16 { margin-top:16px; }
+.mb-16 { margin-bottom:16px; }
+.p-16 { padding:16px; }
