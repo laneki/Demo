@@ -1,0 +1,13 @@
+duration,protocol,service,flag,src_bytes,dst_bytes,wrong_fragment,urgent,count,srv_count,label
+0.10,tcp,http,SF,120,5600,0,0,5,8,normal
+0.20,tcp,https,SF,200,6800,0,0,10,12,normal
+2.50,udp,dns,SF,90,1200,0,0,25,20,normal
+1.10,tcp,ssh,SF,1500,900,0,0,18,15,normal
+0.05,icmp,other,REJ,20,40,1,0,85,90,attack
+4.20,tcp,ftp,RSTO,35000,45000,0,0,90,95,attack
+3.40,tcp,smtp,RSTR,28000,39000,0,1,88,80,attack
+0.30,udp,dns,SF,140,1800,0,0,20,18,normal
+0.15,tcp,http,SF,180,4500,0,0,8,9,normal
+6.80,tcp,other,REJ,42000,52000,1,0,97,99,attack
+2.10,tcp,ftp,S0,26000,8000,0,0,70,76,attack
+0.40,udp,https,SF,300,5200,0,0,14,17,normal
