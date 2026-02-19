@@ -1,0 +1,12 @@
+TOPIC_PREFIX = "iotmas"
+
+DEVICES_DATA = f"{TOPIC_PREFIX}/devices/data"
+AAA_IN = f"{TOPIC_PREFIX}/aaa/in"
+AAA_AUTHORIZED = f"{TOPIC_PREFIX}/aaa/authorized"
+AAA_BLOCKED = f"{TOPIC_PREFIX}/aaa/blocked"
+TMA_IN = f"{TOPIC_PREFIX}/tma/in"
+TMA_TO_IDA = f"{TOPIC_PREFIX}/tma/to_ida"
+TMA_TO_VMA = f"{TOPIC_PREFIX}/tma/to_vma"
+IDA_OUT = f"{TOPIC_PREFIX}/ida/out"
+VMA_OUT = f"{TOPIC_PREFIX}/vma/out"
+METRICS_EVENTS = f"{TOPIC_PREFIX}/metrics/events"
