@@ -1,0 +1,7 @@
+DEVICE_DATA = "iotmas/devices/data"
+AAA_AUTHORIZED = "iotmas/aaa/authorized"
+AAA_BLOCKED = "iotmas/aaa/blocked"
+TMA_TO_IDA = "iotmas/tma/to_ida"
+TMA_TO_VMA = "iotmas/tma/to_vma"
+IDA_OUT = "iotmas/ida/out"
+VMA_OUT = "iotmas/vma/out"
