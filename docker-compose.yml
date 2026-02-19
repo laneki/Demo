@@ -1,0 +1,88 @@
+services:
+  broker:
+    image: eclipse-mosquitto:2
+    container_name: broker
+    ports:
+      - "1883:1883"
+    volumes:
+      - ./broker/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+
+  iot_dev:
+    build:
+      context: .
+      dockerfile: services/device_sim/Dockerfile
+    environment:
+      BROKER_HOST: broker
+      BROKER_PORT: 1883
+      PUBLISH_INTERVAL_MS: 300
+    depends_on:
+      - broker
+
+  aaa:
+    build:
+      context: .
+      dockerfile: services/aaa/Dockerfile
+    environment:
+      BROKER_HOST: broker
+      BROKER_PORT: 1883
+      AUTH_RATE: 0.7
+    depends_on:
+      - broker
+
+  tma:
+    build:
+      context: .
+      dockerfile: services/tma/Dockerfile
+    environment:
+      BROKER_HOST: broker
+      BROKER_PORT: 1883
+    depends_on:
+      - broker
+
+  ida:
+    build:
+      context: .
+      dockerfile: services/ida/Dockerfile
+    environment:
+      BROKER_HOST: broker
+      BROKER_PORT: 1883
+      IDA_THRESH: 0.6
+    volumes:
+      - ida_artifacts:/app/artifacts
+    depends_on:
+      - broker
+
+  vma:
+    build:
+      context: .
+      dockerfile: services/vma/Dockerfile
+    environment:
+      BROKER_HOST: broker
+      BROKER_PORT: 1883
+    depends_on:
+      - broker
+
+  metrics:
+    build:
+      context: .
+      dockerfile: services/metrics/Dockerfile
+    environment:
+      BROKER_HOST: broker
+      BROKER_PORT: 1883
+      EVENTS_MAX: 50
+    ports:
+      - "8000:8000"
+    depends_on:
+      - broker
+
+  dashboard:
+    build:
+      context: .
+      dockerfile: dashboard/Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - metrics
+
+volumes:
+  ida_artifacts:
